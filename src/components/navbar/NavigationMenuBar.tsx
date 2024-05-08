@@ -28,7 +28,7 @@ export function NavigationMenuBar() {
         <NavigationMenuItem>
           <Link href='/articles' legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Articles
+              <span className=''>Articles</span>
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
@@ -39,13 +39,13 @@ export function NavigationMenuBar() {
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
-        <NavigationMenuItem>
+        {/* <NavigationMenuItem>
           <Link href='/youtube' legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               YouTube
             </NavigationMenuLink>
           </Link>
-        </NavigationMenuItem>
+        </NavigationMenuItem> */}
         <NavigationMenuItem>
           <Link href='/uses' legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>

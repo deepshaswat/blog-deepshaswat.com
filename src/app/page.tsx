@@ -1,3 +1,3 @@
 export default function Home() {
-  return <div> BLog Landing Page</div>;
+  return <div className='m-20'></div>;
 }

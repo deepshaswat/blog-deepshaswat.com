@@ -2,8 +2,10 @@
 
 import React from "react";
 import { ThemeProvider } from "@/components/theme/theme-provider";
+import { Command } from "lucide-react";
+import { CommandBar } from "@/components/command/CommandBar";
 // import { SessionProvider } from "next-auth/react";
-// import { RecoilRoot } from "recoil";
+import { RecoilRoot } from "recoil";
 
 export const Providers = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -14,9 +16,9 @@ export const Providers = ({ children }: { children: React.ReactNode }) => {
       enableSystem
       disableTransitionOnChange
     >
-      {/* <RecoilRoot> */}
-      {children}
-      {/* </RecoilRoot> */}
+      <RecoilRoot>
+        <CommandBar>{children}</CommandBar>
+      </RecoilRoot>
     </ThemeProvider>
     // </SessionProvider>
   );
