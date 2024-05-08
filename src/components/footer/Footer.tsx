@@ -1,12 +1,5 @@
 import { cn } from "@/lib/utils";
-import {
-  Github,
-  Instagram,
-  Linkedin,
-  LucideProps,
-  MailOpen,
-  Twitter,
-} from "lucide-react";
+import { Github, Instagram, Linkedin, MailOpen, Twitter } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 
@@ -17,31 +10,32 @@ interface LinkProps {
 }
 
 export default function Footer() {
+  const size = 13;
   const links: LinkProps[] = [
     {
       title: "Email",
       url: "/contact",
-      icon: <MailOpen size={18} />,
+      icon: <MailOpen size={size} />,
     },
     {
       title: "Twitter",
       url: "https://twitter.com/shaswat_X",
-      icon: <Twitter size={18} />,
+      icon: <Twitter size={size} />,
     },
     {
       title: "GitHub",
       url: "https://github.com/deepshaswat",
-      icon: <Github size={18} />,
+      icon: <Github size={size} />,
     },
     {
       title: "LinkedIn",
       url: "https://linkedin.com/in/deepshaswat",
-      icon: <Linkedin size={18} />,
+      icon: <Linkedin size={size} />,
     },
     {
       title: "Instagram",
       url: "https://instagram.com/deepshaswat",
-      icon: <Instagram size={18} />,
+      icon: <Instagram size={size} />,
     },
   ];
 
@@ -55,12 +49,7 @@ export default function Footer() {
         href={link.url}
         passHref
       >
-        <span className='hidden md:block '>{link.title}</span>
-        {/* <span className='text-sm'>{React.createElement(link.icon)}</span> */}
-        {/* <span className='opacity-100 md:opacity-0 hover:opacity:100 ml-1'>
-          {link.icon}
-        </span> */}
-
+        <span className='hidden md:block'>{link.title}</span>
         <span className='block md:hidden opacity-100 ml-2'>{link.icon}</span>
         <span className='hidden md:group-hover:block opacity-0 group-hover:opacity-100 ml-1 transition-opacity duration-300 ease-in-out'>
           {link.icon}
@@ -70,7 +59,7 @@ export default function Footer() {
   };
 
   return (
-    <div className='bg-background flex items-center justify-center py-5'>
+    <div className='bg-background flex gap-x-3 items-center justify-center py-5'>
       {links.map(renderAnchor)}
     </div>
   );

@@ -235,8 +235,10 @@ interface ResultItemProps {
 const ResultItem: React.FC<ResultItemProps> = ({ action, active }) => {
   return (
     <div
-      className={`p-4 flex justify-between items-center   cursor-pointer transition-colors duration-200 ease-in-out text-neutral-400 hover:text-primary hover:bg-neutral-700 hover:bg-opacity-90 ${
-        active ? "text-primary bg-neutral-700 bg-opacity-90" : " "
+      className={`p-4 z-10 flex justify-between items-center   cursor-pointer transition-colors duration-200 ease-in-out text-neutral-400  ${
+        active
+          ? "text-primary bg-neutral-700 bg-opacity-90 hover:text-primary hover:bg-neutral-700 hover:bg-opacity-90"
+          : " "
       }`}
     >
       <div className='flex gap-2 items-center'>

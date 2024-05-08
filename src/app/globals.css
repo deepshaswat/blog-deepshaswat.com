@@ -57,3 +57,47 @@
     @apply bg-background text-foreground;
   }
 }
+
+.gradient-text {
+  background: linear-gradient(
+    to right,
+    var(--gradient-start),
+    var(--gradient-end)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@layer components {
+  .iframe-wrap {
+    height: 0;
+    margin-bottom: 20px;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+  }
+  .iframe-wrap iframe {
+    border: none;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  .post-image-caption {
+    text-align: center;
+    font-style: italic;
+    font-size: 0.875rem; /* 14px */
+    color: theme("colors.secondary");
+  }
+}
+
+.underline-links a {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.text-decoration strong {
+  color: theme("colors.primary");
+}
