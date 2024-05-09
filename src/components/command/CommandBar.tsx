@@ -136,15 +136,6 @@ export const CommandBar = ({ children }: { children: React.ReactNode }) => {
     //   icon: <Youtube size={20} />,
     // },
     {
-      id: "uses",
-      name: "Uses",
-      shortcut: ["g", "u"],
-      keywords: "go-uses",
-      section: "Go To",
-      perform: () => router.push("/uses"),
-      icon: <Laptop size={20} />,
-    },
-    {
       id: "library",
       name: "Library",
       shortcut: ["g", "l"],
@@ -153,6 +144,16 @@ export const CommandBar = ({ children }: { children: React.ReactNode }) => {
       perform: () => router.push("/library"),
       icon: <Library size={20} />,
     },
+    {
+      id: "uses",
+      name: "Uses",
+      shortcut: ["g", "u"],
+      keywords: "go-uses",
+      section: "Go To",
+      perform: () => router.push("/uses"),
+      icon: <Laptop size={20} />,
+    },
+
     {
       id: "newsletter",
       name: "Newsletter",

@@ -24,6 +24,7 @@ export function NavigationMenuBar() {
           "/about",
           "/articles",
           "/investing",
+          "/library",
           "/uses",
           "/newsletter",
           "/reminder",

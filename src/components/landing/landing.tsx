@@ -22,16 +22,16 @@ export default function Landing() {
           </Link>
         </h3>
         <h4 className='text-lg font-noraml text-slate-500 px-4 mb-8'>
-          Building{" "}
+          Building a{" "}
           <Link
             href={"https://www.orbizza.com/ratecreator"}
             className='underline underline-offset-4 hover:text-neutral-200'
             target='_blank'
           >
             {" "}
-            content creators&apos;
+            platform
           </Link>{" "}
-          review platform
+          to review content creators
           {/* 
           1. Content Creator Review Platform for <em> YouTube, Instagram, X (Twitter)</em> and more.
           2. Building the future of content interaction
