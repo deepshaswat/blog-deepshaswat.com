@@ -1,7 +1,6 @@
 "use client";
 
 import Head from "next/head";
-import GradientText from "@/components/posts/GradientText";
 import categories from "@/store/data/uses";
 import Base from "../posts/BaseStatic";
 

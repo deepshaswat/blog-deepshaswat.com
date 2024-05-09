@@ -30,6 +30,7 @@ const config = {
       },
       colors: {
         yellow: "#ffff80",
+        black: "#000000",
         pink: "#ff80bf",
         purple: "#9580ff",
         red: "#ff9580",

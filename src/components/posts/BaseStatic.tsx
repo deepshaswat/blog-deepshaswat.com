@@ -6,7 +6,7 @@ import { PostContainer, PostContent, PostMain } from "./Post";
 interface BaseProps {
   title: string;
   tagline: string;
-  description: string;
+  description?: string;
   primaryColor: string;
   secondaryColor: string;
   children: React.ReactNode;
@@ -29,7 +29,7 @@ const Base: React.FC<BaseProps> = ({
               {tagline ? tagline : title}
             </GradientText>
             <p
-              dangerouslySetInnerHTML={{ __html: description }}
+              dangerouslySetInnerHTML={{ __html: description || "" }}
               className='text-md mb-12 mt-12 font-thin text-decoration'
             />
             {children}
