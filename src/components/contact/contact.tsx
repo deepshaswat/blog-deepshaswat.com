@@ -55,18 +55,17 @@ export const Contact = () => {
 
   const onSubmit = (values: z.infer<typeof ContactSchema>) => {
     setError("");
-    setSuccess("");
     console.log(values);
     startTransition(() => {
-      contact(values).then((data) => {
-        setError(data.error);
-        setSuccess(data.success);
+      contact(values).then((response) => {
+        if (response.error) {
+          setError(response.error);
+        } else if (response.success) {
+          setShowToast(true);
+          setTimeout(() => setShowToast(false), 3000);
+          form.reset();
+        }
       });
-      if (success) {
-        setShowToast(true);
-        setTimeout(() => setShowToast(false), 3000);
-        form.reset();
-      }
     });
   };
 
