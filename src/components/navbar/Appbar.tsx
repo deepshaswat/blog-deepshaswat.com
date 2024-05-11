@@ -1,17 +1,17 @@
 "use client";
 
 import { useKBar } from "kbar";
-import { NavigationMenuBar } from "./NavigationMenuBar";
 import { Button } from "../ui/button";
 import Link from "next/link";
 import { Menu } from "lucide-react";
+import { Navigation } from "./navigation";
 
 export function Appbar() {
   const { query } = useKBar();
   return (
-    <div className='fixed top-1 left-2 right-2  shadow-md bg-background '>
-      <div className='w-full border-b-[0] flex flex-row items-center justify-between'>
-        <div className='flex items-center justify-start'>
+    <header className=' px-4 py-2 '>
+      <div className='max-w-screen-4xl mx-auto'>
+        <div className='w-full flex items-center justify-between '>
           <Link href='/' passHref>
             <Button
               className='font-bold text-3xl no-underline font-heading'
@@ -20,16 +20,14 @@ export function Appbar() {
               S
             </Button>
           </Link>
-        </div>
-        <div className='hidden md:block w-full max-w-lg flex-row items-center justify-center py-2'>
-          <NavigationMenuBar />
-        </div>
-        <div className='flex item-center justify-end'>
+          <div className='flex items-center md:gap-x-12 lg:gap-x-16'>
+            <Navigation />
+          </div>
           <Button variant={"ghost"} onClick={() => query.toggle()}>
             <Menu size={32} />
           </Button>
         </div>
       </div>
-    </div>
+    </header>
   );
 }

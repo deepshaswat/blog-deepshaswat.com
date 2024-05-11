@@ -28,7 +28,7 @@ export default function RootLayout({
           {/* bg-gradient-to-t from-red-50 via-slate-200 to-neutral-400
           dark:from-slate-700 from-10% dark:via-slate-950 via-30% dark:to-black
           to-90% */}
-          <div className='min-h-[calc(100vh-6.85vh)] max-w-screen-lg lg:mx-auto '>
+          <div className='min-h-[calc(100vh-12vh)] max-w-screen-lg lg:mx-auto '>
             {children}
             <Toaster />
           </div>

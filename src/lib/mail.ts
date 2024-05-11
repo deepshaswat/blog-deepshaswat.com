@@ -10,7 +10,7 @@ export const sendContactEmail = async (
   message: string
 ) => {
   const { data, error } = await resend.emails.send({
-    from: "contact@mail.deepshaswat.com",
+    from: "Shaswat Deep <contact@mail.deepshaswat.com>",
     to: "hi@deepshaswat.com",
     subject: "Email from: " + name,
     reply_to: email,
@@ -20,7 +20,7 @@ export const sendContactEmail = async (
   if (error) {
     console.log(error);
     return {
-      error: "Something went wrong in email!",
+      error: "Something went wrong!",
     };
   }
 

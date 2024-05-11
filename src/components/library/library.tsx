@@ -1,29 +1,29 @@
 "use client";
 
 import Head from "next/head";
-import categories from "@/store/data/uses";
+import books from "@/store/data/library";
 import Base from "../posts/BaseStatic";
 
 export async function getStaticProps() {
   const meta = {
     title: "Uses // Shaswat Deep",
     description:
-      "I often get messages asking about specific pieces of <strong>software or hardware I use</strong>. This not a static page, it's a <strong>living document</strong> with everything that I'm using nowadays.",
-    tagline: "Apps. Tools. Gear. ",
-    // TODO: Add image of laptop or desktop workspace
+      "I'm all about <strong> learning for life</strong>, and I think the best <em>(and cheapest)</em> way to tap into the world’s wisdom  is <strong> through books</strong>. This is not just a static page — it's <strong>a living document</strong> of every book I've collected so far.<br /> <br />Collect books, even if you don't plan <strong>on reading </strong>them right away. Nothing is more important than <strong>an unread library.</strong><br /><em> -- <a href='https://en.wikipedia.org/wiki/John_Waters' target='_blank' class='underline hover:text-primary underline-offset-[5px]'>John Waters</a></em> ",
+    tagline: "Ideas. Mentors. Help. ",
+    // TODO: Add image of library
     image: "/static/images/reminder-bw.jpg",
-    primaryColor: "yellow",
-    secondaryColor: "pink",
+    primaryColor: "pink",
+    secondaryColor: "red",
   };
 
   return { props: meta };
 }
 
-export const Uses = async () => {
+export const Library = async () => {
   const { props } = await getStaticProps();
   const { title, description, image } = props;
   const renderAll = () => {
-    return categories.map((category, index) => {
+    return books.map((category, index) => {
       return (
         <div key={index} className='mb-2'>
           <h2 className='text-primary font-bold text-2xl'>{category.name}</h2>
@@ -40,9 +40,10 @@ export const Uses = async () => {
                   </a>
                   <span> - </span>
                   <span
-                    className={`text-sm underline-links`}
-                    dangerouslySetInnerHTML={{ __html: item.description }}
+                    className={`text-sm underline-links italic`}
+                    dangerouslySetInnerHTML={{ __html: item.author }}
                   />
+                  <p className='text-sm'>{item.description}</p>
                 </li>
               );
             })}
@@ -66,5 +67,3 @@ export const Uses = async () => {
     </>
   );
 };
-
-export default Uses;

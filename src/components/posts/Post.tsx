@@ -8,7 +8,7 @@ interface PostMainProps {
 
 const PostMain: React.FC<PostMainProps> = ({ children }) => {
   return (
-    <main className='flex-1 overflow-hidden mt-32 mx-auto min-h-[calc(100vh-21.5vh)] flex flex-col max-w-screen-sm md:max-w-screen-md '>
+    <main className='flex-1 overflow-hidden  mx-auto min-h-[calc(100vh-21.5vh)] flex flex-col max-w-screen-sm md:max-w-screen-md '>
       {children}
     </main>
   );

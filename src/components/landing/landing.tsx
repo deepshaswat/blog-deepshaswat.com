@@ -8,7 +8,7 @@ import { ShortcutHome } from "../shortcut/shortcut-home";
 
 export default function Landing() {
   return (
-    <div className='min-h-[calc(100vh-15vh)] sm:min-h-[calc(100vh-6.85vh)] flex items-center justify-start max-w-screen-sm md:max-w-screen-md  '>
+    <div className='min-h-[calc(100vh-20vh)] sm:min-h-[calc(100vh-12vh)] flex items-center justify-start max-w-screen-sm md:max-w-screen-md  '>
       <div className='flex flex-col justify-center items-start ml-6 md:mx-auto'>
         <h1 className='text-5xl font-bold mb-12 px-4'>Shaswat Deep</h1>
         <h3 className='text-lg font-normal px-4 mb-2 '>

@@ -1,5 +1,7 @@
+import { Library } from "@/components/library/library";
+
 const LibraryPage = () => {
-  return <div></div>;
+  return <Library />;
 };
 
 export default LibraryPage;
