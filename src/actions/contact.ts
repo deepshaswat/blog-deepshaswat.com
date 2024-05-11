@@ -8,6 +8,7 @@ import { sendContactEmail } from "@/lib/mail";
 
 export const contact = async (values: z.infer<typeof ContactSchema>) => {
   const validatedFields = ContactSchema.safeParse(values);
+  console.log("inside contact action");
 
   if (!validatedFields.success) {
     return {

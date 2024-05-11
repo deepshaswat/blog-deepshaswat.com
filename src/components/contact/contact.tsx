@@ -55,9 +55,10 @@ export const Contact = () => {
 
   const onSubmit = (values: z.infer<typeof ContactSchema>) => {
     setError("");
-    console.log(values);
+
     startTransition(() => {
       contact(values).then((response) => {
+        console.log(response);
         if (response.error) {
           setError(response.error);
         } else if (response.success) {
