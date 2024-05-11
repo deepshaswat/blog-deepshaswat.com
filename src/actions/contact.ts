@@ -27,19 +27,19 @@ export const contact = async (values: z.infer<typeof ContactSchema>) => {
       },
     });
     console.timeEnd("DB Operation");
-    console.time("Email Sending");
-    sendContactEmail(name, email, message).then((status) => {
-      if (status.error) {
-        console.error("Email Error:", status.error);
-      }
-    });
-    console.timeEnd("Email Sending");
   } catch (error) {
     console.log(error);
     return {
       error: "Something went wrong!",
     };
   }
+  console.time("Email Sending");
+  sendContactEmail(name, email, message).then((status) => {
+    if (status.error) {
+      console.error("Email Error:", status.error);
+    }
+  });
+  console.timeEnd("Email Sending");
 
   return {
     success: "Message sent!",
