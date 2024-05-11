@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={inter.className}>
-        <GoogleAnalytics />
+        {/* <GoogleAnalytics /> */}
         <Providers>
           <Appbar />
           {/* bg-gradient-to-t from-red-50 via-slate-200 to-neutral-400
