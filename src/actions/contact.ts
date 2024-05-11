@@ -18,20 +18,22 @@ export const contact = async (values: z.infer<typeof ContactSchema>) => {
   const { email, name, message } = validatedFields.data;
 
   try {
-    const status = await sendContactEmail(name, email, message);
-    if (status.error) {
-      return {
-        error: "Sending Email Failed!",
-      };
-    } else if (status.success) {
-      await prisma.contactForm.create({
-        data: {
-          name,
-          email,
-          message,
-        },
-      });
-    }
+    console.time("DB Operation");
+    await prisma.contactForm.create({
+      data: {
+        name,
+        email,
+        message,
+      },
+    });
+    console.timeEnd("DB Operation");
+    console.time("Email Sending");
+    sendContactEmail(name, email, message).then((status) => {
+      if (status.error) {
+        console.error("Email Error:", status.error);
+      }
+    });
+    console.timeEnd("Email Sending");
   } catch (error) {
     console.log(error);
     return {

@@ -18,6 +18,7 @@ export const sendContactEmail = async (
   });
 
   if (error) {
+    console.log(error);
     return {
       error: "Something went wrong!",
     };
