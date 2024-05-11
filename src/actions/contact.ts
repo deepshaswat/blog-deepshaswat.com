@@ -8,13 +8,13 @@ import { sendContactEmail } from "@/lib/mail";
 
 export const contact = async (values: z.infer<typeof ContactSchema>) => {
   const validatedFields = ContactSchema.safeParse(values);
-  console.log("inside contact action");
 
   if (!validatedFields.success) {
     return {
       error: "Invalid fields!",
     };
   }
+  console.log("inside contact action");
 
   const { email, name, message } = validatedFields.data;
 
@@ -31,15 +31,11 @@ export const contact = async (values: z.infer<typeof ContactSchema>) => {
   } catch (error) {
     console.log(error);
     return {
-      error: "Something went wrong!",
+      error: "Something went wrong in db catch!",
     };
   }
   console.time("Email Sending");
-  sendContactEmail(name, email, message).then((status) => {
-    if (status.error) {
-      console.error("Email Error:", status.error);
-    }
-  });
+  await sendContactEmail(name, email, message);
   console.timeEnd("Email Sending");
 
   return {

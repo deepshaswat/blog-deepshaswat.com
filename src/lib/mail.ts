@@ -16,16 +16,4 @@ export const sendContactEmail = async (
     reply_to: email,
     react: EmailTemplate({ name, email, message }),
   });
-
-  if (error) {
-    console.log(error);
-    return {
-      error: "Something went wrong!",
-    };
-  }
-
-  return {
-    success: "Message sent!",
-    data: data,
-  };
 };
