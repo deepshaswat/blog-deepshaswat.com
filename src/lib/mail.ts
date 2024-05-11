@@ -9,7 +9,6 @@ export const sendContactEmail = async (
   email: string,
   message: string
 ) => {
-  console.log("inside sendContactEmail");
   const { data, error } = await resend.emails.send({
     from: "contact@mail.deepshaswat.com",
     to: "hi@deepshaswat.com",
@@ -18,15 +17,15 @@ export const sendContactEmail = async (
     react: EmailTemplate({ name, email, message }),
   });
 
-  // if (error) {
-  //   console.log(error);
-  //   return {
-  //     error: "Something went wrong in email!",
-  //   };
-  // }
+  if (error) {
+    console.log(error);
+    return {
+      error: "Something went wrong in email!",
+    };
+  }
 
-  // return {
-  //   success: "Message sent!",
-  //   data: data,
-  // };
+  return {
+    success: "Message sent!",
+    data: data,
+  };
 };

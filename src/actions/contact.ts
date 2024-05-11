@@ -14,12 +14,10 @@ export const contact = async (values: z.infer<typeof ContactSchema>) => {
       error: "Invalid fields!",
     };
   }
-  console.log("inside contact action");
 
   const { email, name, message } = validatedFields.data;
 
   try {
-    console.log("Creating contact form entry in db");
     await prisma.contactForm.create({
       data: {
         name,
@@ -30,16 +28,14 @@ export const contact = async (values: z.infer<typeof ContactSchema>) => {
   } catch (error) {
     console.log(error);
     return {
-      error: "Something went wrong in db catch!",
+      error: "Something went wrong!",
     };
   }
-  console.log("Sending email");
-  await sendContactEmail(name, email, message);
-  //   .then((status) => {
-  //   if (status.error) {
-  //     console.error("Email Error:", status.error);
-  //   }
-  // });
+  await sendContactEmail(name, email, message).then((status) => {
+    if (status.error) {
+      console.error("Email Error:", status.error);
+    }
+  });
 
   return {
     success: "Message sent!",

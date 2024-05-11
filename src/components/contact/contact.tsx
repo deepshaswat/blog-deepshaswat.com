@@ -43,7 +43,6 @@ export const Contact = () => {
   const [showToast, setShowToast] = useRecoilState(showToastEmailState);
   const [isPending, startTransition] = useTransition();
   const [error, setError] = useState<string | undefined>("");
-  const [success, setSuccess] = useState<string | undefined>("");
   const form = useForm<z.infer<typeof ContactSchema>>({
     resolver: zodResolver(ContactSchema),
     defaultValues: {
