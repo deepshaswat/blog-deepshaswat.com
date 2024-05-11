@@ -31,7 +31,7 @@ export const contact = async (values: z.infer<typeof ContactSchema>) => {
       error: "Something went wrong!",
     };
   }
-  await sendContactEmail(name, email, message).then((status) => {
+  sendContactEmail(name, email, message).then((status) => {
     if (status.error) {
       console.error("Email Error:", status.error);
     }
