@@ -2,8 +2,8 @@
 
 import * as z from "zod";
 
-import { ContactSchema } from "@/schemas/index";
-import prisma from "@/db/index";
+import { ContactSchema } from "@/schemas";
+import prisma from "@/db";
 import { sendContactEmail } from "@/lib/mail";
 
 export const contact = async (values: z.infer<typeof ContactSchema>) => {
@@ -17,6 +17,7 @@ export const contact = async (values: z.infer<typeof ContactSchema>) => {
   console.log("inside contact action");
 
   const { email, name, message } = validatedFields.data;
+  console.log("Values:", email, name, message);
 
   try {
     console.time("DB Operation");
@@ -35,7 +36,11 @@ export const contact = async (values: z.infer<typeof ContactSchema>) => {
     };
   }
   console.time("Email Sending");
-  await sendContactEmail(name, email, message);
+  sendContactEmail(name, email, message).then((status) => {
+    if (status.error) {
+      console.error("Email Error:", status.error);
+    }
+  });
   console.timeEnd("Email Sending");
 
   return {
