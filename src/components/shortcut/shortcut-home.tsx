@@ -13,7 +13,12 @@ export const ShortcutHome = () => {
 
   if (mounted) {
     const isMac = /(Mac)/i.test(navigator.userAgent);
-    const isMobile = /iPhone|iPad|Android/i.test(navigator.userAgent);
+    //const isMobile = /iPhone|iPad|Android/i.test(navigator.userAgent);
+    const isMobile =
+      /iPhone|iPad|Android/i.test(navigator.userAgent) ||
+      (navigator.userAgent.includes("Mac") && "ontouchend" in document) ||
+      "ontouchstart" in window ||
+      navigator.maxTouchPoints > 0;
 
     if (isMobile) {
       return <ShortcutButton>Tap to start →</ShortcutButton>;

@@ -1,16 +1,15 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
-import { useKBar } from "kbar";
-import { MoveRight } from "lucide-react";
 import Link from "next/link";
-import { ShortcutHome } from "../shortcut/shortcut-home";
+import { ShortcutHome } from "@/components/shortcut/shortcut-home";
 
 export default function Landing() {
   return (
     <div className='min-h-[calc(100vh-20vh)] sm:min-h-[calc(100vh-12vh)] flex items-center justify-start max-w-screen-sm md:max-w-screen-md  '>
       <div className='flex flex-col justify-center items-start ml-6 md:mx-auto'>
-        <h1 className='text-5xl font-bold mb-12 px-4'>Shaswat Deep</h1>
+        <h1 className='text-2xl sm:text-5xl font-bold mb-12 px-4'>
+          Shaswat Deep
+        </h1>
         <h3 className='text-lg font-normal px-4 mb-2 '>
           Founder & CEO at{" "}
           <Link

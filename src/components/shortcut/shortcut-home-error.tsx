@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { ShortcutButton } from "@/components/shortcut/shortcut-button";
 import Kbd from "@/components/ui/kbd";
 import { Button } from "@/components/ui/button";
 import { useRouter } from "next/navigation";
@@ -19,7 +18,13 @@ export const ShortcutErrorHome = () => {
   }, []);
 
   if (mounted) {
-    const isMobile = /iPhone|iPad|Android/i.test(navigator.userAgent);
+    // const isMobile = /iPhone|iPad|iPadPro|Android/i.test(navigator.userAgent);
+
+    const isMobile =
+      /iPhone|iPad|Android/i.test(navigator.userAgent) ||
+      (navigator.userAgent.includes("Mac") && "ontouchend" in document) ||
+      "ontouchstart" in window ||
+      navigator.maxTouchPoints > 0;
 
     const message = isMobile ? (
       <span>Tap to go home →</span>

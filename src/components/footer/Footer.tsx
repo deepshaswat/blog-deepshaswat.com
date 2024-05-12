@@ -1,17 +1,28 @@
-import { cn } from "@/lib/utils";
-import { Github, Instagram, Linkedin, MailOpen, Twitter } from "lucide-react";
+"use client";
+
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import { title } from "process";
-import React from "react";
+import { Github, Instagram, Linkedin, MailOpen, Twitter } from "lucide-react";
 
 interface LinkProps {
   title: string;
   url: string;
-  icon: any;
+  icon: React.ReactNode;
 }
 
 export default function Footer() {
+  const [isMobile, setIsMobile] = useState(false);
   const size = 16;
+
+  useEffect(() => {
+    const userAgent = navigator.userAgent;
+    const isMobileDevice =
+      /iPhone|iPad|Android/i.test(userAgent) ||
+      (userAgent.includes("Mac") && "ontouchend" in document) ||
+      navigator.maxTouchPoints > 0;
+    setIsMobile(isMobileDevice);
+  }, []);
+
   const links: LinkProps[] = [
     {
       title: "Email",
@@ -49,13 +60,21 @@ export default function Footer() {
         passHref
         target={link.title === "Email" ? "_self" : "_blank"}
       >
-        <span className='hidden md:block text-lg text-neutral-600'>
-          {link.title}
-        </span>
-        <span className='block md:hidden opacity-100 ml-2'>{link.icon}</span>
-        <span className='hidden md:group-hover:block opacity-0 group-hover:opacity-100 ml-1 transition-opacity duration-300 ease-in-out'>
-          {link.icon}
-        </span>
+        {!isMobile ? (
+          <>
+            <span className='hidden md:block text-lg text-neutral-600'>
+              {link.title}
+            </span>
+            <span className='block md:hidden opacity-100 ml-2'>
+              {link.icon}
+            </span>
+            <span className='hidden md:group-hover:block opacity-0 group-hover:opacity-100 ml-1 transition-opacity duration-300 ease-in-out'>
+              {link.icon}
+            </span>
+          </>
+        ) : (
+          <span className='block opacity-100 ml-2'>{link.icon}</span>
+        )}
       </Link>
     );
   };

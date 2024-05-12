@@ -1,8 +1,7 @@
 "use client";
 
 import Head from "next/head";
-import GradientText from "@/components/posts/GradientText";
-import Base from "../posts/BaseStatic";
+import Base from "@/components/posts/BaseStatic";
 
 export async function getStaticProps() {
   const meta = {

@@ -2,7 +2,7 @@
 
 import Head from "next/head";
 import books from "@/store/data/library";
-import Base from "../posts/BaseStatic";
+import Base from "@/components/posts/BaseStatic";
 
 export async function getStaticProps() {
   const meta = {
@@ -22,6 +22,7 @@ export async function getStaticProps() {
 export const Library = async () => {
   const { props } = await getStaticProps();
   const { title, description, image } = props;
+
   const renderAll = () => {
     return books.map((category, index) => {
       return (

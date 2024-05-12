@@ -65,7 +65,7 @@ export const CommandBar = ({ children }: { children: React.ReactNode }) => {
     {
       id: "copy",
       name: "Copy Link",
-      shortcut: ["l"],
+      shortcut: ["c"],
       keywords: "copy-link",
       section: "General",
       perform: copyLink,
@@ -183,10 +183,8 @@ export const CommandBar = ({ children }: { children: React.ReactNode }) => {
             <KBarAnimator className='bg-[#1a1c1e] max-w-[600px] w-full text-primary rounded-lg overflow-hidden support:backdrop-blur support:backdrop-saturate-300 support:backdrop-filter-blur-25 '>
               <div className='overflow-hidden scrollbar-hide'>
                 <div className='relative'>
-                  {/* Icon inside the search input */}
                   <div className='absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none'>
                     <Search className='w-5 h-5 text-gray-400' />{" "}
-                    {/* Icon component */}
                   </div>
 
                   <KBarSearch

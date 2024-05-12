@@ -23,10 +23,10 @@ import {
   FormLabel,
   FormMessage,
 } from "@/components/ui/form";
-import { Input } from "../ui/input";
-import { Textarea } from "../ui/textarea";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
 import Head from "next/head";
-import Base from "../posts/BaseStatic";
+import Base from "@/components/posts/BaseStatic";
 
 export const Contact = () => {
   const meta = {
@@ -103,7 +103,7 @@ export const Contact = () => {
                 name='name'
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Name</FormLabel>
+                    <FormLabel className='text-neutral-500'>Name</FormLabel>
                     <FormControl>
                       <Input
                         {...field}
@@ -120,7 +120,7 @@ export const Contact = () => {
                 name='email'
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Email</FormLabel>
+                    <FormLabel className='text-neutral-500'>Email</FormLabel>
                     <FormControl>
                       <Input
                         {...field}
@@ -138,11 +138,11 @@ export const Contact = () => {
                 name='message'
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Message</FormLabel>
+                    <FormLabel className='text-neutral-500'>Message</FormLabel>
                     <FormControl>
                       <Textarea
                         {...field}
-                        className='min-h-[100px]'
+                        className='min-h-[100px] '
                         id='message'
                         disabled={isPending}
                         placeholder='Enter your message'
@@ -163,7 +163,7 @@ export const Contact = () => {
                 type='submit'
                 className='w-full text-black'
               >
-                Send Email
+                Send
               </Button>
             </CardFooter>
           </form>

@@ -1,3 +1,5 @@
+"use client";
+
 import { ShortcutErrorHome } from "@/components/shortcut/shortcut-home-error";
 
 interface ErrorMessageProps {
@@ -13,8 +15,8 @@ export const ErrorMessage = ({ code }: ErrorMessageProps) => {
     description = "This page doesn't exist.";
   }
   return (
-    <div className='min-h-[calc(100vh-6.85vh)] flex flex-col items-center justify-center max-w-screen-sm md:max-w-screen-lg  '>
-      <h1 className='text-5xl md:text-7xl mb-20'>{title}</h1>
+    <div className='min-h-[calc(100vh-20vh)] flex flex-col items-center justify-center max-w-screen-sm md:max-w-screen-lg  '>
+      <h1 className='text-4xl md:text-7xl mb-20'>{title}</h1>
       <ShortcutErrorHome />
       <p className='text-neutral-600'>{description}</p>
     </div>
