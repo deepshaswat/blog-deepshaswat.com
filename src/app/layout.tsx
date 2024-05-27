@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Nunito } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./providers";
@@ -6,13 +6,18 @@ import { GoogleAnalytics } from "@/components/analytics/GoogleAnalytics";
 import { Appbar } from "@/components/navbar/Appbar";
 import Footer from "@/components/footer/Footer";
 import { Toaster } from "@/components/ui/sonner";
+import { generateSiteConfig } from "@/components/config/site-config";
 
 const inter = Nunito({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
-  title: "Shaswat Deep",
-  description: "deepshaswat.com",
+export const viewport: Viewport = {
+  themeColor: "black",
 };
+
+export const metadata: Metadata = generateSiteConfig(
+  "Shaswat Deep",
+  "deepshaswat.com"
+);
 
 export default function RootLayout({
   children,
