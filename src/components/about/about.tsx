@@ -6,7 +6,7 @@ import Head from "next/head";
 import Base from "../posts/BaseStatic";
 import Image from "next/image";
 
-export async function getStaticProps() {
+export async function generateMetadata() {
   const meta = {
     title: "About // Shaswat Deep",
     description:
@@ -20,7 +20,7 @@ export async function getStaticProps() {
 }
 
 export const About = async () => {
-  const { props } = await getStaticProps();
+  const { props } = await generateMetadata();
   const { title, description, image, tagline, primaryColor, secondaryColor } =
     props;
 
