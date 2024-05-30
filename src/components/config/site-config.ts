@@ -7,7 +7,7 @@ const BASE_URL = "https://test.deepshaswat.com";
 export function generateSiteConfig(
   title: string = "Shaswat Deep",
   description: string = "deepshaswat.com",
-  urlSuffix: string = "/",
+  urlSuffix: string = "",
   image_url: string = "/static/images/reminder-bw.jpg"
 ): Metadata {
   const fullUrl = `${BASE_URL}${urlSuffix}`;
