@@ -14,6 +14,7 @@ import {
   // Youtube,
   Newspaper,
   Search,
+  FolderRoot,
 } from "lucide-react";
 
 import {
@@ -116,6 +117,15 @@ export const CommandBar = ({ children }: { children: React.ReactNode }) => {
       section: "Go To",
       perform: () => router.push("/articles"),
       icon: <PenLine size={20} />,
+    },
+    {
+      id: "projects",
+      name: "Projects",
+      shortcut: ["g", "p"],
+      keywords: "go-projects",
+      section: "Go To",
+      perform: () => router.push("/projects"),
+      icon: <FolderRoot size={20} />,
     },
     {
       id: "investing",

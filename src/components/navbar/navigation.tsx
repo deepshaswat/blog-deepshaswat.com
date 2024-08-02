@@ -10,6 +10,9 @@ const routes = [
     href: "/articles",
   },
   {
+    href: "/projects",
+  },
+  {
     href: "/investing",
   },
   {
