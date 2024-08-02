@@ -44,7 +44,7 @@ export const Library = async () => {
                     className={`text-sm underline-links italic`}
                     dangerouslySetInnerHTML={{ __html: item.author }}
                   />
-                  <p className='text-sm'>
+                  <p className='text-sm '>
                     {item.language}
                     {item.description !== "" && (
                       <>

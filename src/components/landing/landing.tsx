@@ -21,9 +21,9 @@ export default function Landing() {
           </Link>
         </h3>
         <h4 className='text-lg font-noraml text-slate-500 px-4 mb-8'>
-          Building a{" "}
+          Building the{" "}
           <Link
-            href={"https://www.orbizza.com/ratecreator"}
+            href={"https://ratecreator.com"}
             className='underline underline-offset-4 hover:text-neutral-200'
             target='_blank'
           >
