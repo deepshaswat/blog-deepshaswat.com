@@ -9,12 +9,12 @@ const routes = [
   {
     href: "/articles",
   },
-  {
-    href: "/projects",
-  },
-  {
-    href: "/investing",
-  },
+  // {
+  //   href: "/projects",
+  // },
+  // {
+  //   href: "/investing",
+  // },
   {
     href: "/library",
   },

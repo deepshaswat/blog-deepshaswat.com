@@ -22,6 +22,14 @@ const Base: React.FC<BaseProps> = ({
 }) => {
   return (
     <>
+      <style>
+        {`
+          ::selection {
+            background: ${primaryColor};
+            color: #000; 
+          }
+        `}
+      </style>
       <PostMain>
         <PostContent className=''>
           <PostContainer>
