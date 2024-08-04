@@ -3,106 +3,216 @@ const categories = [
     name: "Desk",
     items: [
       {
-        title: 'MacBook Pro (14", 2021)',
+        title: 'MacBook Pro (14", 2023)',
         description:
-          "The M1 chip is just amazing. Plus, 16 GB RAM and 1TB storage.",
-        url: "https://amzn.to/3pVZUNz",
+          "The M3 Max chip is amazing in Space Black. 36GB RAM and 1TB storage.",
+        url: "https://amzn.to/3Sxm32c",
+      },
+
+      {
+        title: "Benq EL2870U 28 4K Monitor",
+        description: "I use 3 monitor setup. This is the primary one.",
+        url: "https://amzn.to/4c5P0cl",
+      },
+      {
+        title: "Dell P2722H 27 Monitor",
+        description: "Two of these. And one in portrait mode.",
+        url: "https://amzn.to/4dn8M4a",
+      },
+      {
+        title: "Standing Desk",
+        description:
+          "6 feet Standing desk as most of my time is spent in Home Office.",
+        url: "https://amzn.to/4d7XAst",
+      },
+      {
+        title: "Sleep Company ErgoSmart Chair",
+        description:
+          "I sit 50% of day, so I might get a Herman Miller chair in future.",
+        url: "https://amzn.to/3WJibO1",
+      },
+      {
+        title: "Baseus Monitor Lights",
+        description: "Great relief for eyes. Special for night time.",
+        url: "https://amzn.to/4ds84CC",
+      },
+      {
+        title: "Desk Mat",
+        description: "Holds my mouse, keyboard, trackpad and phone.",
+        url: "https://amzn.to/3LNZnH1",
+      },
+      {
+        title: "Carpio - DeltaHub",
+        description:
+          "A dilema purchase for wrist support. Future self will thank me.",
+        url: "https://amzn.to/4c4iIi0",
+      },
+    ],
+  },
+  {
+    name: "Keyboard & Mouse",
+    items: [
+      {
+        title: "RK Royal Kludge RK100",
+        description:
+          "My preferred wireless keyboard with a 96% compact layout. With customised switches and keycaps.",
+        url: "https://amzn.to/3YttyLj",
+      },
+      {
+        title: "Logitech MX Keys S",
+        description: "Multipurpose keyboard with great customization.",
+        url: "https://amzn.to/4c8FQfl",
+      },
+      {
+        title: "Apple Magic Keyboard",
+        description: "This is my backup keyboard.",
+        url: "https://amzn.to/3Ytn1Ar",
+      },
+      {
+        title: "Logitech MX Master 3",
+        description:
+          "Using an ergonomic mouse was a game changer based on the amount I use.",
+        url: "https://amzn.to/3A8RtFK",
       },
       {
         title: "Apple Magic Trackpad",
         description:
-          "After years of using the laptop only, I can't go back to a mouse.",
-        url: "https://amzn.to/3mAOcFW",
+          "I got hand of both Mouse and Trackpad setup and is great to work with.",
+        url: "https://amzn.to/3Ahcq17",
       },
       {
-        title: 'Dell UltraSharp 27" 4K Monitor ',
-        description: "I love being able to charge my computer via USB-C.",
-        url: "https://amzn.to/3jYKLqQ",
-      },
-      {
-        title: "Living Spaces Hollis Desk",
+        title: "Gateron Cap V2 Golden Brown",
         description:
-          "Nothing fancy over here, just a table that fits my office.",
-        url: "https://www.livingspaces.com/pdp-hollis-writing-desk-225568",
+          "Great switch with thongy sound. Only issue, its not see through.",
+        url: "https://www.genesispc.in/products/gateron-cap-v2-golden-brown",
       },
       {
-        title: "Herman Miller Sayl Chair",
-        description: "I sit all day, so I might as well get a good chair.",
-        url: "https://store.hermanmiller.com/home-office-chairs/sayl-chair/2294.html",
+        title: "Skyloong River Themed Keycaps",
+        description:
+          "Didnot find the actual keycaps link. Added the closest one.",
+        url: "https://www.genesispc.in/products/skyloong-boo-themed-keycaps",
       },
     ],
   },
   {
-    name: "Keyboard",
+    name: "Investing & Finance",
     items: [
       {
-        title: "GMK Dracula",
-        description: "The single most beautiful keycaps ever created :P",
-        url: "https://omnitype.com/products/gmk-dracula",
+        title: "Kite - Zerodha",
+        description:
+          "My favorite investing platform for stocks in the long term.",
+        url: " https://zerodha.com/open-account?c=UN1836",
       },
       {
-        title: "Keychron K6",
+        title: "Coin - Zerodha",
         description:
-          "My preferred wireless keyboard with a 65% compact layout.",
-        url: "https://amzn.to/3bvnYOW",
+          "My MF investing platform which consistent returns ~ 30% XIRR.",
+        url: " https://zerodha.com/open-account?c=UN1836",
       },
       {
-        title: "Drop Ctrl",
+        title: "Fyers",
         description:
-          "This is my backup mechanical keyboard with Cherry MX Brown switches.",
-        url: "https://drop.com/buy/drop-ctrl-mechanical-keyboard",
+          "My favorite trading platform for stocks, FnO and indexes. Integrates with TradingView.",
+        url: "https://signup.fyers.in/?utm-source=Customer-Referral&utm-medium=XS73016",
       },
       {
-        title: "Drink Artisan Keycap",
+        title: "Vested",
+        description: "US stock investing platform for diversification.",
+        url: "https://refer.vestedfinance.com/SHDE79102",
+      },
+      {
+        title: "BitBNS",
         description:
-          'My favorite drink is <a href="https://en.wikipedia.org/wiki/Caipirinha">caipirinha</a>, so I replaced my ESC key with this.',
-        url: "https://drop.com/buy/drop-ctrl-mechanical-keyboard",
+          "I think future of currency is crypto, and I have 25% of my investments here. My portfolio is made of ETH, BTC, SOL, DOGE, SHIB, XRP, and ADA.",
+        url: "https://ref.bitbns.com/21027",
+      },
+      {
+        title: "TradingView",
+        description:
+          "This is the best platform to analyse charts and add indicators. Because you can find all stocks, indexes, and crypto.",
+        url: "https://in.tradingview.com/pricing/?share_your_love=pathtofire",
       },
     ],
   },
   {
-    name: "Coding",
+    name: "Coding & Terminal",
     items: [
       {
         title: "VSCode",
         description:
-          "After using Sublime for many years, I moved to VSCode like everybody else.",
+          "After using Intellij for many years, I moved to VSCode once I moved to full-stack.",
         url: "https://code.visualstudio.com",
       },
       {
-        title: "Dracula PRO",
+        title: "iTerm2",
         description:
-          "This is the theme I created, maintain, and proudly use everywhere.",
-        url: "https://draculatheme.com/pro",
+          "This was my goto installation with multiple tabs and screen divisions. Customised with Bash.",
+        url: "https://iterm2.com/",
       },
       {
-        title: "Fira Code",
-        description:
-          "I absolutely love this monospaced font because of all the ligatures.",
-        url: "https://github.com/tonsky/FiraCode",
+        title: "Warp",
+        description: "I absolutely love this since I started using.",
+        url: "https://app.warp.dev/referral/VQXXXQ",
       },
     ],
   },
   {
-    name: "Terminal",
+    name: "VSCode - Plugins",
     items: [
       {
-        title: "Hyper",
-        description:
-          "Performance could be better, but I enjoy using this since it's made with JavaScript.",
-        url: "https://hyper.is",
+        title: "Andromeda",
+        description: "Nice theme. Might try Dracula by Zeno Rocha.",
+        url: "https://marketplace.visualstudio.com/items?itemName=EliverLara.andromeda",
       },
       {
-        title: "Oh My ZSH",
-        description:
-          "A collection of ZSH plugins that you install once and you're ready to go.",
-        url: "https://ohmyz.sh",
+        title: "Color Highlight",
+        description: "Shows the colour directly in the code.",
+        url: "https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight",
       },
       {
-        title: "Fig",
+        title: "Import Cost",
         description:
-          "Super cool app that adds VSCode-style autocomplete to your existing terminal",
-        url: "http://fig.io",
+          "Provides with the size of the package that you are importing.",
+        url: "https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost",
+      },
+      {
+        title: "Tailwind CSS IntelliSense",
+        description:
+          "It enhanced the experience of working with Tailwind CSS. Specially helpful for who was scared of CSS.",
+        url: "https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss",
+      },
+      {
+        title: "Svg Preview",
+        description: "Helpful for live editing the SVG files.",
+        url: "https://marketplace.visualstudio.com/items?itemName=SimonSiefke.svg-preview",
+      },
+      {
+        title: "Simple React Snippets",
+        description:
+          "Great shortcuts to speedup the coding. Collection of React snippets.",
+        url: "https://marketplace.visualstudio.com/items?itemName=burkeholland.simple-react-snippets",
+      },
+      {
+        title: "Prisma",
+        description:
+          "Syntax highlighter, linting and code completion for Prisma Schema files.",
+        url: "https://marketplace.visualstudio.com/items?itemName=Prisma.prisma",
+      },
+      {
+        title: "Prettier - Code formatter",
+        description:
+          "Code formater specially helpful if husky is not setup in repo.",
+        url: "https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode",
+      },
+      {
+        title: "Pretty TypeScript Errors",
+        description: "Helps in reading TS error. Great for someone like me.",
+        url: "https://marketplace.visualstudio.com/items?itemName=yoavbls.pretty-ts-errors",
+      },
+      {
+        title: "GitHub Copilot",
+        description: "AI pair programmer. Speeds up the coding.",
+        url: "https://marketplace.visualstudio.com/items?itemName=GitHub.copilot",
       },
     ],
   },
@@ -110,48 +220,43 @@ const categories = [
     name: "Apps",
     items: [
       {
-        title: "1Password",
-        description: "The first thing I install on any new device.",
-        url: "https://1password.com",
-      },
-      {
-        title: "Alfred",
+        title: "Arc - Browser Company",
         description:
-          'My favorite Spotlight replacement with <a href="https://github.com/zenorocha/alfred-workflows" target="_blank">tons of workflows</a>.',
-        url: "https://alfredapp.com",
+          "After using Chrome for 15+ years, I moved to Arc. Best for speed and privacy.",
+        url: "https://arc.net/",
       },
       {
-        title: "Bartender",
-        description: "Perfect way to declutter and manage the macOS menubar.",
-        url: "https://www.macbartender.com/Bartender4",
+        title: "Canva",
+        description: "The one app for all my image and logo creation.",
+        url: "https://www.canva.com/",
       },
       {
-        title: "CleanShot X",
+        title: "Clippy",
+        description: "A great tool for managing clipboard history.",
+        url: "https://clipy-app.com/",
+      },
+      {
+        title: "ColorShurp",
+        description: "A great tool for picking colors from the screen.",
+        url: "https://colorslurp.com/",
+      },
+      {
+        title: "Da Vinci Resolve",
         description:
-          "This is what I use whenever I need to share and/or highlight screenshots.",
-        url: "https://cleanshot.com",
+          "The best video editing software I have used. And its free.",
+        url: "https://www.blackmagicdesign.com/products/davinciresolve",
       },
       {
-        title: "Divvy",
-        description: "Tiny app that I use to create custom window positions.",
-        url: "https://mizage.com/divvy",
-      },
-      {
-        title: "Figma",
+        title: "ExcaliDraw",
         description:
-          "I never thought something would replace the Adobe suite for me. Figma did.",
-        url: "https://figma.com",
+          "A great tool for creating diagrams and wireframes. I use it for all my projects.",
+        url: "https://excalidraw.com/",
       },
       {
         title: "Grammarly",
         description:
           "A must-have tool for non-native English speakers like me.",
         url: "https://grammarly.com/",
-      },
-      {
-        title: "iStat Menu",
-        description: "A little system monitoring tool that sits on my menubar.",
-        url: "https://bjango.com/mac/istatmenus/",
       },
       {
         title: "Linear",
@@ -164,28 +269,28 @@ const categories = [
         url: "https://www.notion.so/",
       },
       {
-        title: "Paw",
-        description:
-          "A native macOS app that facilitates triggering HTTP requests.",
-        url: "https://paw.cloud",
-      },
-      {
-        title: "Things",
-        description:
-          "My current choice for to-do lists and organizing personal tasks.",
-        url: "https://culturedcode.com/things/",
-      },
-      {
-        title: "TunnelBear",
+        title: "NordVPN",
         description:
           "Wonderful VPN app that I use to access content from other countries.",
-        url: "https://www.tunnelbear.com/",
+        url: "https://refer-nordvpn.com/CnNmFRYtrzq",
       },
       {
-        title: "Superhuman",
+        title: "OBS Studio",
+        description: "The best tool for screen recording and streaming.",
+        url: "https://obsproject.com/",
+      },
+      {
+        title: "Raycast",
         description:
-          "I never thought I would pay to use email until I found this.",
-        url: "https://superhuman.com/",
+          "My favorite Spotlight replacement. Recently started. Will provide more details soon.",
+        url: "https://www.raycast.com/",
+      },
+
+      {
+        title: "Rectangle",
+        description:
+          "A great tool for managing windows. I use it to manage my 3 monitors.",
+        url: "https://rectangleapp.com/",
       },
     ],
   },
@@ -199,16 +304,16 @@ const categories = [
         url: "https://www.algolia.com",
       },
       {
+        title: "AWS Cloud",
+        description:
+          "The best cloud service I have used. I use it for all my projects.",
+        url: "https://aws.amazon.com/",
+      },
+      {
         title: "Cloudflare",
         description:
           "The DNS service I use with all my domains. Amazing product.",
         url: "https://www.cloudflare.com",
-      },
-      {
-        title: "Collective",
-        description:
-          "This is what I used to create and maintain my <em>company of one</em>.",
-        url: "https://www.collective.com",
       },
       {
         title: "Firebase",
@@ -217,31 +322,31 @@ const categories = [
         url: "https://firebase.google.com",
       },
       {
-        title: "Google Domains",
+        title: "SquareSpace",
         description: "I buy and renew all my domains here.",
-        url: "https://domains.google",
+        url: "https://www.squarespace.com/",
       },
       {
-        title: "Gumroad",
-        description: "The platform I use as a creator to sell things online.",
-        url: "https://app.gumroad.com/signup?referrer=draculatheme",
+        title: "MongoDB Atlas",
+        description: "The best database service I have used.",
+        url: "https://www.mongodb.com/",
       },
       {
-        title: "Ilo",
+        title: "Clerk",
         description:
-          "An analytics tool to measure the impact of my tweets and stuff.",
-        url: "https://ilo.so",
+          "The best auth service I have used. I use it for all my side projects.",
+        url: "https://clerk.com/",
       },
       {
-        title: "Infisical",
-        description: "An open-source secrets manager for developers.",
-        url: "https://infisical.com",
+        title: "PostHog",
+        description: "The best analytics service I have used.",
+        url: "https://posthog.com/",
       },
       {
-        title: "Kayak",
+        title: "Upstash",
         description:
-          "This makes it easier to find flight itineraries and share them with family.",
-        url: "https://kayak.com",
+          "The best Redis hosting service I have used. Great for side projects.",
+        url: "https://upstash.com/",
       },
       {
         title: "Resend",
@@ -254,51 +359,40 @@ const categories = [
           "Here is where I host all my websites. By far the best developer experience.",
         url: "https://vercel.com",
       },
+      {
+        title: "ShadCN/UI",
+        description:
+          "The best UI components I have used. It speeds up the development process.",
+        url: "https://ui.shadcn.com/",
+      },
+      {
+        title: "Aceternity UI",
+        description:
+          "One of the best Framer UI components you can access for free.",
+        url: "https://ui.aceternity.com/",
+      },
     ],
   },
+
   {
     name: "Recording",
     items: [
       {
-        title: "Sony Alpha 7C",
+        title: "Logitech Brio 4K Webcam",
         description:
-          "Awesome build quality and image. The flip-out LCD screen is super useful.",
-        url: "https://amzn.to/2ZRB1rx",
+          "Awesome build quality and image. Giving best quality on Zoom calls and while screen recording with video.",
+        url: "https://amzn.to/4cbDJHu",
       },
       {
-        title: "Tamron 28-75mm Lens",
-        description:
-          "The cheapest option I could find. No idea how these lenses work.",
-        url: "https://amzn.to/3By5E21",
+        title: "iPhone 13 Pro Max",
+        description: "The best use of iPhone and cost saving on a 4K camera.",
+        url: "https://amzn.to/4fwGiXy",
       },
       {
-        title: "Elgato Camlink",
+        title: "Osaka Ring Light",
         description:
-          "This weird thing that allows you to use DSLR cameras as webcams.",
-        url: "https://amzn.to/3bzME8Y",
-      },
-      {
-        title: "Elgato Key Light",
-        description:
-          "I keep this turned on, so people don't think I work from a dungeon.",
-        url: "https://amzn.to/3CD0Euh",
-      },
-    ],
-  },
-  {
-    name: "Screenshare",
-    items: [
-      {
-        title: "Screenflow",
-        description:
-          "I hate editing videos. Screenflow makes it so much easier.",
-        url: "https://www.telestream.net/screenflow/",
-      },
-      {
-        title: "Mouseposé",
-        description:
-          "Everybody asks me about this. It's a great way to highlight things.",
-        url: "https://boinx.com/mousepose/",
+          "This gets the work done. Complements the other lights in the room.",
+        url: "https://amzn.to/3yqBhz7",
       },
     ],
   },
@@ -306,61 +400,22 @@ const categories = [
     name: "Audio",
     items: [
       {
-        title: "Blue Yeti X",
-        description: "Pretty flexible USB condenser microphone.",
-        url: "https://amzn.to/3nJlpOU",
-      },
-      {
-        title: "Blue Compass Boom Arm",
+        title: "MAONO AU-PM421",
         description:
-          "If you're into cable management, you'll appreciate this thing.",
-        url: "https://amzn.to/3nOHPOI",
+          "Pretty flexible USB condenser microphone. Comes with an arm stand.",
+        url: "https://amzn.to/3SzGLP0",
       },
       {
-        title: "AirPods Max (Silver)",
+        title: "Apple AirPods Pro",
+        description:
+          "Quick connect and seamless switching between iPhone and Mac. Specially on the Go.",
+        url: "https://amzn.to/3Ac0fD6",
+      },
+      {
+        title: "JBL Live 660NC",
         description:
           "By far the best headphones I ever had. Premium quality, solid build.",
-        url: "https://amzn.to/3gnkaSb",
-      },
-    ],
-  },
-  {
-    name: "Finance",
-    items: [
-      {
-        title: "Betterment",
-        description:
-          "My favorite investing platform, which consistently returns ~16% earnings.",
-        url: "http://betterment.com/invite/zenorochabuenonetto",
-      },
-      {
-        title: "Mint",
-        description:
-          "All my accounts are connected in one place, so I can see a big picture of everything.",
-        url: "https://mint.com",
-      },
-      {
-        title: "Coinbase",
-        description:
-          "I'm not obsessed with crypto, but I still have some small investments there. My portfolio is made of ETH, BTC, SOL, DOGE, and SHIB.",
-        url: "https://coinbase.com/join/rocha_12",
-      },
-    ],
-  },
-  {
-    name: "Reading",
-    items: [
-      {
-        title: "Kindle Oasis",
-        description:
-          "I particularly like this device since it has built-in lights and physical buttons.",
-        url: "https://amzn.to/3mAbMmm",
-      },
-      {
-        title: "Audible",
-        description:
-          "The perfect choice to listen to a book while running outside.",
-        url: "https://www.audible.com/",
+        url: "https://amzn.to/3YtVv5D",
       },
     ],
   },

@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import { Github, Instagram, Linkedin, MailOpen, Twitter } from "lucide-react";
+import { Github, Instagram, Linkedin, Mail, Twitter } from "lucide-react";
 
 interface LinkProps {
   title: string;
@@ -27,17 +27,18 @@ export default function Footer() {
     {
       title: "Email",
       url: "/contact",
-      icon: <MailOpen size={size} />,
-    },
-    {
-      title: "Twitter",
-      url: "https://twitter.com/shaswat_X",
-      icon: <Twitter size={size} />,
+      icon: <Mail size={size} />,
     },
     {
       title: "GitHub",
       url: "https://github.com/deepshaswat",
       icon: <Github size={size} />,
+    },
+
+    {
+      title: "Instagram",
+      url: "https://instagram.com/deepshaswat",
+      icon: <Instagram size={size} />,
     },
     {
       title: "LinkedIn",
@@ -45,16 +46,16 @@ export default function Footer() {
       icon: <Linkedin size={size} />,
     },
     {
-      title: "Instagram",
-      url: "https://instagram.com/deepshaswat",
-      icon: <Instagram size={size} />,
+      title: "X (Twitter)",
+      url: "https://twitter.com/shaswat_X",
+      icon: <Twitter size={size} />,
     },
   ];
 
   const renderAnchor = (link: LinkProps, index: number) => {
     return (
       <Link
-        className='group flex items-center ml-5 text-sm text-neutral-500 border-0 no-underline lowercase transition-color duration-200 ease-in-out hover:text-neutral-100 focus:text-primary'
+        className='group flex items-center ml-5 text-[16px]  text-neutral-500 border-0 no-underline  transition-color duration-200 ease-in-out hover:text-neutral-100 focus:text-primary'
         key={index}
         href={link.url}
         passHref
@@ -62,9 +63,7 @@ export default function Footer() {
       >
         {!isMobile ? (
           <>
-            <span className='hidden md:block text-lg text-neutral-600'>
-              {link.title}
-            </span>
+            <span className='hidden md:block text-sm  '>{link.title}</span>
             <span className='block md:hidden opacity-100 ml-2'>
               {link.icon}
             </span>

@@ -1,6 +1,6 @@
 const items = [
   {
-    jobTitle: "Founder & CEO",
+    jobTitle: "Founder",
     company: "Orbizza",
     companyUrl: "https://orbizza.com",
     startDate: "2024-03-22",
@@ -42,7 +42,7 @@ const items = [
     jobTitle: "Software Test Enginner",
     company: "Mindtree Ltd",
     companyUrl: "https://mindtree.com",
-    startDate: "2011-10-01",
+    startDate: "2013-06-17",
     endDate: "2014-12-03",
     location: "Bangalore, India",
   },
