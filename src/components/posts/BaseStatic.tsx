@@ -22,20 +22,21 @@ const Base: React.FC<BaseProps> = ({
 }) => {
   return (
     <>
-      <style>
-        {`
-          ::selection {
-            background: ${primaryColor};
-            color: #000; 
-          }
-        `}
-      </style>
       <PostMain>
+        <style>{`
+         ::selection {
+          background: ${primaryColor};
+          color: #000;
+          webkittextfillcolor: "#000";
+          webkitbackgroundclip: "text";
+        }
+      `}</style>
         <PostContent className=''>
           <PostContainer>
             <GradientText startColor={primaryColor} endColor={secondaryColor}>
               {tagline ? tagline : title}
             </GradientText>
+
             <p
               dangerouslySetInnerHTML={{ __html: description || "" }}
               className='text-md mb-12 mt-12 font-thin text-decoration'
